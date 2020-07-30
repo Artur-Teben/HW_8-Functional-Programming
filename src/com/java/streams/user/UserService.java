@@ -8,13 +8,13 @@ import java.util.stream.Collectors;
 public class UserService {
     public Collection<User> initUserCollection() {
         return Arrays.asList(
-                new User("Вася", 16, "Днепр"),
-                new User("Петя", 23, "Днепр"),
-                new User("Елена", 42, "Луцк"),
-                new User("Елена", 92, "Чернигов"),
-                new User("Сергей", 5, "Киев"),
-                new User("Марина", 32, "Киев"),
-                new User("Иван Иванович", 69, "Львов"));
+                new User("Vasya", 16, "Dnipro"),
+                new User("Petya", 23, "Dnipro"),
+                new User("Lena", 42, "Lutsk"),
+                new User("Lena", 92, "Chernigiv"),
+                new User("Sergei", 5, "Kyiv"),
+                new User("Marina", 32, "Kyiv"),
+                new User("Ivan Ivanovich", 69, "Lviv"));
     }
 
     public Collection<User> getUsersOverAge(Collection<User> userCollection, int age) {

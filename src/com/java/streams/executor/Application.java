@@ -21,13 +21,13 @@ public class Application {
         usServ.printUsers(usServ.getUsersOverAge(usColl, 40));
 
         System.out.println("\nUsers under fifty years and from Dnipro: ");
-        usServ.printUsers(usServ.getUsersUnderAgeAndFromCity(usColl, 50, "Днепр"));
+        usServ.printUsers(usServ.getUsersUnderAgeAndFromCity(usColl, 50, "Dnipro"));
 
         System.out.println("\nAvarage age users from Lviv: ");
-        System.out.println(usServ.getAverageAgeUsersFromCity(usColl, "Львов"));
+        System.out.println(usServ.getAverageAgeUsersFromCity(usColl, "Lviv"));
 
         System.out.println("\nUsers that are not from Kyiv: ");
-        usServ.printUsers(usServ.getUsersNotFromCity(usColl, "Киев"));
+        usServ.printUsers(usServ.getUsersNotFromCity(usColl, "Kyiv"));
 
         System.out.println("\nFirst three users sorted by age: ");
         usServ.printUsers(usServ.getNumUsersSortedByAge(usColl, 3));
