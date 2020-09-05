@@ -19,8 +19,8 @@ public class UserService {
 
     public Collection<User> getUsersOverAge(Collection<User> userCollection, int age) {
         return userCollection.stream()
-                                .filter(p -> p.getAge() > age)
-                                .collect(Collectors.toList());
+                .filter(p -> p.getAge() > age)
+                .collect(Collectors.toList());
     }
 
     public Collection<User> getUsersUnderAgeAndFromCity(Collection<User> userCollection, int age, String city) {
@@ -34,7 +34,7 @@ public class UserService {
                                 .filter(p -> (p.getCity().equals(city)))
                                 .mapToInt(User::getAge)
                                 .average()
-                                .getAsDouble();
+                                .orElseThrow();
     }
 
     public Collection<User> getUsersNotFromCity(Collection<User> userCollection, String city) {
